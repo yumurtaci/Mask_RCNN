@@ -1818,22 +1818,6 @@ def data_generator(dataset, config, shuffle=True, augment=False, augmentation=No
                 raise
 
 ############################################################
-#  Anchors Class
-############################################################
-
-'''class AnchorsLayer(KL.Layer):
-    def __init__(self, anchors, name="anchors", **kwargs):
-        super(AnchorsLayer, self).__init__(name=name, **kwargs)
-        self.anchors = tf.Variable(anchors)
-
-    def call(self, dummy):
-        return self.anchors
-
-    def get_config(self):
-        config = super(AnchorsLayer, self).get_config()
-        return config'''
-
-############################################################
 #  MaskRCNN Class
 ############################################################
 
